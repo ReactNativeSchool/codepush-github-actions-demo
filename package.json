@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "codepush:ios": "yarn appcenter codepush release-react -a HBL-Demo/CI-Codepush-Demo-iOS -d Staging",
+    "codepush:android": "yarn appcenter codepush release-react -a HBL-Demo/CI-Codepush-Demo-Android -d Staging"
   },
   "dependencies": {
     "react": "17.0.1",
@@ -17,6 +19,7 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "appcenter-cli": "^2.10.4",
     "babel-jest": "^26.6.3",
     "eslint": "7.14.0",
     "jest": "^26.6.3",
