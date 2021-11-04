@@ -7,6 +7,8 @@ jobs:
   build:
     name: Android CodePush
     runs-on: ubuntu-20.04
+    env:
+      APPCENTER_ANDROID: ${{ secrets.APPCENTER_ANDROID }}
 
     steps:
       - uses: actions/checkout@v2
@@ -28,4 +30,4 @@ jobs:
         run: yarn
 
       - name: Codepush
-        run: yarn codepush:android
+        run: yarn codepush:android --token $APPCENTER_ANDROID
