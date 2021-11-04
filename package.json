@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "codepush:ios": "yarn appcenter codepush release-react -a HBL-Demo/CI-Codepush-Demo-iOS -d Staging",
+    "codepush:ios": "yarn appcenter codepush release-react -a HBL-Demo/CI-Codepush-Demo-iOS -d Staging --plist-file ios/TestApp/Info.plist",
     "codepush:android": "yarn appcenter codepush release-react -a HBL-Demo/CI-Codepush-Demo-Android -d Staging"
   },
   "dependencies": {
